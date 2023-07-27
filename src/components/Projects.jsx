@@ -6,13 +6,13 @@ const Projects = () => {
       title: "Weather Website",
       description:
         "A Website used to display the temperature and other climatic behaviors of any cities you want..",
-      photo: "/src/assets/projects/img1.png",
+      photo: "/src/assets/projects/img1.jpeg",
     },
     {
       title: "Anushoopy",
       description:
         "E-commerce - Shopping Application",
-      photo: "/src/assets/projects/img2.png",
+      photo: "/src/assets/projects/img2.jpeg",
     },
     {
       title: "Anuchatify",
@@ -24,7 +24,7 @@ const Projects = () => {
       title: "Url shortener",
       description:
         "Used to shorten URL links",
-      photo: "/src/assets/projects/img3.png",
+      photo: "/src/assets/projects/img4.avif",
     },
   ];
   return (
