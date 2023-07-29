@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import './styles.css';
 import {
-  BookOpenIcon,
   Bars3BottomRightIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { Link, ScrollLink } from "react-scroll";
+import { Link} from "react-scroll";
 
 const Header = () => {
   let Links = [
@@ -20,7 +19,7 @@ const Header = () => {
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-2xl flex items-center gap-1">
-          <span className="text-primary hover:text-white">Portfolio</span>
+          <span className="text-light hover:text-white">Portfolio</span>
         </div>
         {/* Menu icon */}
         <div
@@ -36,7 +35,7 @@ const Header = () => {
           }`}
         >
           {Links.map((link) => (
-            <li className="md:ml-8 md:my-0 my-7 font-semibold" key={link.name}>
+            <li className="boards md:ml-8 md:my-0 my-7 font-semibold " key={link.name}>
               <Link
                 to={link.link}
                 activeClass="active"

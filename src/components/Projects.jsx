@@ -11,7 +11,7 @@ const Projects = () => {
     {
       title: "Anushoopy",
       description:
-        "E-commerce - Shopping Application",
+        "E-commerce - Shopping Application(Payment option under progress)",
       photo: "/src/assets/projects/img2.jpeg",
     },
     {
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "Url shortener",
       description:
-        "Used to shorten URL links",
+        "Used to shorten URL links(Front-end Under Progress)",
       photo: "/src/assets/projects/img4.avif",
     },
   ];
