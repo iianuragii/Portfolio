@@ -1,3 +1,24 @@
 .boards{
     cursor: pointer;
 }
+.resume{
+    background-color: #fdcd53;
+    color: rgba(0, 0, 0, 0.694);
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.main-foot{
+    padding-left: 3%;
+    text-align: center;
+}
+.foot1,.foot2,.foot3{
+    width: 3cm;
+    padding-right: 1cm;
+}
+.items{
+    display: flex;
+    padding-left: 38%;
+}

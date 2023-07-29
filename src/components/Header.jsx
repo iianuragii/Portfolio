@@ -8,18 +8,18 @@ import { Link} from "react-scroll";
 
 const Header = () => {
   let Links = [
-    { name: "About me", link: "about " },
+    { name: "About me", link: "aboutme" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
-  ];
+  ]
   let [open, setOpen] = useState(false);
 
   return (
     <div className="w-full max-w-7xl">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
-        {/* logo section */}
+        
         <div className="font-bold text-2xl flex items-center gap-1">
-          <span className="text-light hover:text-white">Portfolio</span>
+          <span className="text-white hover:text-primary">Portfolio</span>
         </div>
         {/* Menu icon */}
         <div
@@ -41,7 +41,7 @@ const Header = () => {
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className="text-white hover:text-primary duration-500"
+                className="text-light hover:text-primary duration-500"
               >
                 {link.name}
               </Link>

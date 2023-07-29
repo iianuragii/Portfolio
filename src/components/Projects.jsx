@@ -7,24 +7,28 @@ const Projects = () => {
       description:
         "A Website used to display the temperature and other climatic behaviors of any cities you want..",
       photo: "/src/assets/projects/img1.jpeg",
+      link1: "https://anuragsweatherwebsite.netlify.app/",
     },
     {
       title: "Anushoopy",
       description:
         "E-commerce - Shopping Application(Payment option under progress)",
       photo: "/src/assets/projects/img2.jpeg",
+      link1: "https://anushoopy.netlify.app/",
     },
     {
       title: "Anuchatify",
       description:
         "Chatting Application designed with seamless UI",
       photo: "/src/assets/projects/img3.png",
+      link1: " https://github.com/iianuragii/node-chat-app",
     },
     {
       title: "Url shortener",
       description:
         "Used to shorten URL links(Front-end Under Progress)",
       photo: "/src/assets/projects/img4.avif",
+      link1: "https://github.com/iianuragii/Link-shortener",
     },
   ];
   return (
@@ -45,7 +49,7 @@ const Projects = () => {
               className="flex flex-col shadow-sm md:w-[343px] bg-[#31313F] p-4 rounded"
             >
               <a
-                href={project.photo}
+                href={project.link1}
                 target="_blank"
                 rel="noreferrer"
                 className="mb-4"
@@ -55,7 +59,7 @@ const Projects = () => {
               <h3 className="text-primary font-semibold text-lg">
                 {project.title}
               </h3>
-              <p className=" text-white mt-1">{project.description}</p>
+              <p className=" text-white1 mt-1">{project.description}</p>
               
             </div>
           );

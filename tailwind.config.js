@@ -15,6 +15,7 @@ export default {
         tertiary:'#7562e0',
         light:'#BDBDBD',
         dark: '#000036',
+        white1: '#BDBDBD'
       }
     },
   },
