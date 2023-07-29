@@ -6,28 +6,28 @@ const Projects = () => {
       title: "Weather Website",
       description:
         "A Website used to display the temperature and other climatic behaviors of any cities you want..",
-      photo: "../public/images/img1.jpeg",
+      photo: "images/img1.jpeg",
       link1: "https://anuragsweatherwebsite.netlify.app/",
     },
     {
       title: "Anushoopy",
       description:
         "E-commerce - Shopping Application(Payment option under progress)",
-      photo: "/src/assets/projects/img2.jpeg",
+      photo: "images/img2.jpeg",
       link1: "https://anushoopy.netlify.app/",
     },
     {
       title: "Anuchatify",
       description:
         "Chatting Application designed with seamless UI",
-      photo: "/src/assets/projects/img3.png",
+      photo: "images/img3.png",
       link1: " https://github.com/iianuragii/node-chat-app",
     },
     {
       title: "Url shortener",
       description:
         "Used to shorten URL links(Front-end Under Progress)",
-      photo: "/src/assets/projects/img4.avif",
+      photo: "images/img4.avif",
       link1: "https://github.com/iianuragii/Link-shortener",
     },
   ];
