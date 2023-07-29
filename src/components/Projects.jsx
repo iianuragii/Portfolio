@@ -6,7 +6,7 @@ const Projects = () => {
       title: "Weather Website",
       description:
         "A Website used to display the temperature and other climatic behaviors of any cities you want..",
-      photo: "/src/assets/projects/img1.jpeg",
+      photo: "../public/images/img1.jpeg",
       link1: "https://anuragsweatherwebsite.netlify.app/",
     },
     {
@@ -55,12 +55,12 @@ const Projects = () => {
                 className="mb-4"
               >
                 <img src={project.photo} alt={project.title} />
-              </a>
+              
               <h3 className="text-primary font-semibold text-lg">
                 {project.title}
               </h3>
               <p className=" text-white1 mt-1">{project.description}</p>
-              
+              </a>
             </div>
           );
         })}
