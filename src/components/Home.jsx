@@ -16,7 +16,7 @@ const Home = () => {
                         <br></br>
                         
                         <div className='text-tertiary font-semibold md:text-4xl my-4 text-3xl'>Developer Intern @The Bengal Studio</div>
-                        <button className='resume'><a href="https://drive.google.com/file/d/1i3YWc-a4fpjOVePMjUC9AAXu9Jou6PvK/view?usp=sharing">Resume</a></button>
+                        <button className='resume'><a href="https://drive.google.com/file/d/1ZbGl_FxirZ3LwYvPNWW1k6aRax0GNFVB/view?usp=sharing">Resume</a></button>
                     </div>
                     {/* img */}
                     <div className='order-first md:order-last relative'>
