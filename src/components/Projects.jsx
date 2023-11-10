@@ -17,11 +17,11 @@ const Projects = () => {
       link1: "https://anushoopy.netlify.app/",
     },
     {
-      title: "Anuchatify",
+      title: "Anu-Chatify",
       description:
-        "Chatting Application designed with seamless UI",
+        "Video-Chatting Application designed with seamless UI",
       photo: "images/img3.png",
-      link1: " https://github.com/iianuragii/node-chat-app",
+      link1: " https://github.com/iianuragii/ANU-CHATIFY",
     },
     {
       title: "Url shortener",
