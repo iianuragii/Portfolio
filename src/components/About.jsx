@@ -5,12 +5,12 @@ const About = () => {
   const skills = [
     { name: "ReactJs" },
     { name: "Java" },
-    { name: "C++",},
-    { name: "Python",},
-    { name: "MongoDb",},
-    { name: "MySql",},
+    { name: "MUI",},
     { name: "NodeJS",},
-    { name: "Softskills",},
+    { name: "MongoDb",},
+    { name: "Sql",},
+    { name: "Python",},   
+    { name: "Git",},
   ];
   return (
     <div className="md:px-10 px-7 sm:-mt-24" id="aboutme">

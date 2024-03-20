@@ -14,9 +14,9 @@ const Home = () => {
                         <li className='text-light md:w-93'>Open-Souce Enthusiast</li>
                         <li className='text-light md:w-93'>Competative Coder</li>
                         <br></br>
-                        
+                        <div className='text-tertiary font-semibold md:text-4xl my-4 text-3xl'>Developer Intern @A2D Innovations Pvt Ltd</div>
                         <div className='text-tertiary font-semibold md:text-4xl my-4 text-3xl'>Ex-Developer Intern @The Bengal Studio</div>
-                        <button className='resume'><a href="https://drive.google.com/file/d/1FxMU14FFfwY5gmYvBP7Ft_qGc8xJtn53/view?usp=sharing">Resume</a></button>
+                        <button className='resume'><a href="https://drive.google.com/file/d/1U2prAolBFChwLCW_hx_V_DiTHdRLGWhi/view?usp=sharing">Resume</a></button>
                     </div>
                     {/* img */}
                     <div className='order-first md:order-last relative'>
