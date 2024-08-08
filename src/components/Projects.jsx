@@ -3,11 +3,11 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
-      title: "Weather Website",
+      title: "Flickfile",
       description:
-        "A Website used to display the temperature and other climatic behaviors of any cities you want..",
+        "A decentralized drive aims to create a peer-to-peer network where users can upload files and grant and revoke access without relying on a central server...",
       photo: "images/img1.jpeg",
-      link1: "https://anuragsweatherwebsite.netlify.app/",
+      link1: "https://github.com/iianuragii/Technoverse2k24",
     },
     {
       title: "Anushoopy",
@@ -22,13 +22,6 @@ const Projects = () => {
         "Video-Chatting Application designed with seamless UI",
       photo: "images/img3.png",
       link1: " https://github.com/iianuragii/ANU-CHATIFY",
-    },
-    {
-      title: "Url shortener",
-      description:
-        "Used to shorten URL links(Front-end Under Progress)",
-      photo: "images/img4.avif",
-      link1: "https://github.com/iianuragii/Link-shortener",
     },
   ];
   return (
