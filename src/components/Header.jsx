@@ -1,56 +1,79 @@
 import React, { useState } from "react";
-import './styles.css';
-import {
-  Bars3BottomRightIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
-import { Link} from "react-scroll";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-scroll";
 
 const Header = () => {
-  let Links = [
+  const [open, setOpen] = useState(false);
+
+  const links = [
     { name: "About me", link: "aboutme" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
-  ]
-  let [open, setOpen] = useState(false);
+  ];
 
   return (
-    <div className="w-full max-w-7xl">
-      <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
-        
+    <header className="w-full max-w-7xl mx-auto py-4 px-7 md:px-10 fixed top-0 left-0 right-0 bg-transparent z-50">
+      <div className="flex items-center justify-between">
+        {/* Logo or Title */}
         <div className="font-bold text-2xl flex items-center gap-1">
-          <span className="text-white hover:text-primary">Portfolio</span>
+          <span className="text-white hover:text-primary cursor-pointer">
+            Portfolio
+          </span>
         </div>
-        {/* Menu icon */}
-        <div
+
+        {/* Menu Icon for Mobile */}
+        <button
           onClick={() => setOpen(!open)}
-          className="absolute right-8 top-6 md:hidden w-7 h-7 text-white"
+          className="md:hidden w-8 h-8 text-white focus:outline-none"
+          aria-label="Toggle Menu"
         >
-          {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
-        </div>
-        {/* linke items */}
-        <ul
-          className={`md:flex md:items-center md:pb-0 absolute md:static  md:z-auto z-10 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 pl-9 bg-slate-400 sm:bg-transparent transition-all duration-500 ease-in ${
-            open ? "top-12" : "top-[-490px]"
-          }`}
-        >
-          {Links.map((link) => (
-            <li className="boards md:ml-8 md:my-0 my-7 font-semibold " key={link.name}>
+          {open ? <XMarkIcon className="w-full h-full" /> : <Bars3BottomRightIcon className="w-full h-full" />}
+        </button>
+
+        {/* Navigation Links for Desktop */}
+        <nav className="hidden md:flex items-center space-x-6">
+          <ul className="flex space-x-6">
+            {links.map((link) => (
+              <li key={link.name} className="font-semibold">
+                <Link
+                  to={link.link}
+                  activeClass="active"
+                  smooth={true}
+                  spy={true}
+                  className="text-light hover:text-primary cursor-pointer duration-300"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      {/* Mobile Menu */}
+      <nav
+        className={`fixed top-0 left-0 w-full bg-slate-800 transition-transform duration-300 ease-in-out ${
+          open ? "transform translate-y-0" : "transform -translate-y-full"
+        } md:hidden`}
+      >
+        <ul className="flex flex-col items-center py-10">
+          {links.map((link) => (
+            <li key={link.name} className="py-2">
               <Link
                 to={link.link}
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                className="text-light hover:text-primary duration-500"
+                className="text-light hover:text-primary cursor-pointer duration-300"
+                onClick={() => setOpen(false)} // Close menu on link click
               >
                 {link.name}
               </Link>
             </li>
           ))}
         </ul>
-        {/* button */}
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

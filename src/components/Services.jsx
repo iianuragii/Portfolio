@@ -4,7 +4,7 @@ const Services = () => {
     const services = [
     
         {id:1, name:'WEB DEVELOPMENT', description:'I am a FULL stack Web developer with an expertise in MERN.', image:'images/code.png'},
-        {id:2, name:'PROBLEM SOLVING', description:'I have solved over 180 problems at leetcode. I am a 5* coder at Hackerrank and have also solved over 100 questions at gfg. The programming languages that I know are Java and C++.', image:'images/android.png'},
+        {id:2, name:'PROBLEM SOLVING', description:'I have solved over 230 problems at leetcode. I am a 5* coder at Hackerrank and have also solved over 100 questions at gfg. The programming languages that I know are Java and C++.', image:'images/android.png'},
         {id:3, name:'OPEN-SOURCE CONTRIBUTOR', description:'I have over 400+ contributions in Github and have participated in open source events like Hacktoberfest, GSSOC and SWOC.', image:'images/git-repo.png'},
     ];
     return (

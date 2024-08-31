@@ -2,9 +2,33 @@ import React from "react";
 
 const Footer = () => {
   return (
-      <div className="md:pl-10 px-7 mt-10 text-primary opacity-50 flex flex-col md:flex-row items-center my-5">
-        <p>@ Copyright Reserved 2024 by Anurag Dutta</p>
-      </div>
+    <footer
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '1rem 2rem',
+        marginTop: '2rem',
+        marginBottom: '1.5rem',
+        backgroundColor: '#2c2c2c',
+        color: '#ffffff',
+        opacity: '0.9',
+        textAlign: 'center',
+      }}
+    >
+      <p
+        style={{
+          fontSize: '0.875rem',
+          margin: '0',
+          cursor: 'default',
+          transition: 'color 0.3s ease',
+        }}
+        onMouseEnter={(e) => (e.target.style.color = '#ff9800')}
+        onMouseLeave={(e) => (e.target.style.color = '#ffffff')}
+      >
+        © 2024 Anurag Dutta. All Rights Reserved.
+      </p>
+    </footer>
   );
 };
 

@@ -10,15 +10,85 @@
     margin: 10px 0px;
     cursor: pointer;
 }
-.main-foot{
-    padding-left: 3%;
-    text-align: center;
-}
-.foot1,.foot2,.foot3{
-    width: 3cm;
-    padding-right: 1cm;
-}
+
+  
+  .text-primary {
+    color: #007bff; /* Primary color */
+  }
+  
+
 .items{
     display: flex;
     padding-left: 38%;
 }
+
+
+
+  
+  @media (max-width: 768px) {
+    .experience-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  body {
+    padding-top: 70px; /* Offset to account for the fixed header */
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  /* Navigation Links */
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff9800; /* Primary hover color */
+  }
+  
+  /* Mobile Menu */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  }
+  
+  /* Menu Icon */
+  button[aria-label="Toggle Menu"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[aria-label="Toggle Menu"]:hover {
+    opacity: 0.8;
+  }
+  
+  /* Adjust the Home section spacing */
+  #home {
+    padding-top: 90px; /* Space to account for the fixed header */
+    margin-top: 20px;
+  }
+  
